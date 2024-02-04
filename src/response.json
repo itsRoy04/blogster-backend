@@ -1,0 +1,103 @@
+{
+    "id": "1",
+    "airline": "UK",
+    "departureAirport": "CCU",
+    "arrivalAirport": "DEL",
+    "departureTime": "2023-12-11T20:20:00",
+    "arrivalTime": "2023-12-11T22:45:00",
+    "duration": "PT2H25M",
+    "numberOfStops": 0,
+    "price": {
+        "currency": "INR",
+        "total": "14772.00",
+        "base": "11980.00",
+        "fees": [
+            {
+                "amount": "0.00",
+                "type": "SUPPLIER"
+            },
+            {
+                "amount": "0.00",
+                "type": "TICKETING"
+            }
+        ],
+        "grandTotal": "14772.00"
+    },
+    "currency": "INR",
+    "numberOfBookableSeats": 9,
+    "aircraft": "320",
+    "aircraftNumber": "708",
+    "carrierCode": "UK",
+    "amenities": [
+        {
+            "segmentId": "30",
+            "cabin": "ECONOMY",
+            "fareBasis": "V0GRPRYS",
+            "brandedFare": "ECOYS",
+            "brandedFareLabel": "ECO STANDARD",
+            "class": "V",
+            "includedCheckedBags": {
+                "weight": 15,
+                "weightUnit": "KG"
+            },
+            "amenities": [
+                {
+                    "description": "EXCESS HAND BAGGAGE 5KG",
+                    "isChargeable": true,
+                    "amenityType": "BAGGAGE",
+                    "amenityProvider": {
+                        "name": "BrandedFare"
+                    }
+                },
+                {
+                    "description": "VISTARA SELECT",
+                    "isChargeable": false,
+                    "amenityType": "PRE_RESERVED_SEAT",
+                    "amenityProvider": {
+                        "name": "BrandedFare"
+                    }
+                },
+                {
+                    "description": "MEAL SERVICES",
+                    "isChargeable": false,
+                    "amenityType": "MEAL",
+                    "amenityProvider": {
+                        "name": "BrandedFare"
+                    }
+                },
+                {
+                    "description": "PRIORITY CHECK IN",
+                    "isChargeable": true,
+                    "amenityType": "TRAVEL_SERVICES",
+                    "amenityProvider": {
+                        "name": "BrandedFare"
+                    }
+                },
+                {
+                    "description": "PRIORITY BOARDING",
+                    "isChargeable": true,
+                    "amenityType": "TRAVEL_SERVICES",
+                    "amenityProvider": {
+                        "name": "BrandedFare"
+                    }
+                },
+                {
+                    "description": "PRIORITY BAGGAGE HANDLING",
+                    "isChargeable": true,
+                    "amenityType": "TRAVEL_SERVICES",
+                    "amenityProvider": {
+                        "name": "BrandedFare"
+                    }
+                },
+                {
+                    "description": "UPGRADE ELIGIBILITY",
+                    "isChargeable": true,
+                    "amenityType": "BRANDED_FARES",
+                    "amenityProvider": {
+                        "name": "BrandedFare"
+                    }
+                }
+            ]
+        }
+    ]
+}
