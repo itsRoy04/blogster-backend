@@ -4,7 +4,7 @@ import connectDB from './db';
 import usersRouter from './routes/users.routes';
 import blogRouter from './routes/blog.routes';
 
-const rateLimit = require('express-rate-limit');
+// const rateLimit = require('express-rate-limit');
 
 
 const dotenv = require('dotenv');
@@ -18,13 +18,13 @@ const port = process.env.PORT || 3010;
 
 const v1Router = Router();
 
-const limiter = rateLimit({
-    windowMs: 1000, 
-    max: process.env.API_LIMIT_ACCESS, 
-    message: 'Too many requests from this IP, please try again in a moment.',
-});
+// const limiter = rateLimit({
+//     windowMs: 1000, 
+//     max: process.env.API_LIMIT_ACCESS, 
+//     message: 'Too many requests from this IP, please try again in a moment.',
+// });
 
-app.use(limiter);
+// app.use(limiter);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());

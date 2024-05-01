@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 export default function connectDB() {
     
-    const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017";
+    const MONGO_URI = process.env.MONGO_DB_URI || "mongodb://localhost:27017";
     
     mongoose.connect(MONGO_URI, {
         useBigInt64: true,
