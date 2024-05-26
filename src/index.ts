@@ -3,6 +3,7 @@ import cookieParser from 'cookie-parser';
 import connectDB from './db';
 import usersRouter from './routes/users.routes';
 import blogRouter from './routes/blog.routes';
+const cors = require('cors'); // Import cors middleware
 
 // const rateLimit = require('express-rate-limit');
 
@@ -24,7 +25,8 @@ const v1Router = Router();
 //     message: 'Too many requests from this IP, please try again in a moment.',
 // });
 
-// app.use(limiter);
+// app.use(limiter);'
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -40,7 +42,7 @@ app.listen(port, () => {
 
 
 
-
+ 
 // app.get('/api/data', (req, res) => {
 //     const requestApiKey = req.headers['api-key'];
   

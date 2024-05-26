@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const postSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true,
+        required: true, 
         trim: true,
     },
     content: {
@@ -13,10 +13,31 @@ const postSchema = new mongoose.Schema({
     thumbnail: {
         type: String,
     },
+    categories: {
+        type: [String], // An array of strings
+        required: true,
+    },
+    tags: {
+        type: [String], // An array of strings
+    },
+    featured: {
+        type: Boolean,
+        default: false,
+    },
+    draft: {
+        type: Boolean,
+        default: false,
+    },
     metadata: {
-        seoTitle: String,
-        seoDescription: String,
-        seoKeywords: [String],
+        seoTitle: {
+            type: String,
+        },
+        seoDescription: {
+            type: String,
+        },
+        seoKeywords: {
+            type: [String], // An array of strings
+        },
     },
     date: {
         type: Date,
@@ -25,6 +46,5 @@ const postSchema = new mongoose.Schema({
 });
 
 const Post = mongoose.model('Post', postSchema);
-
 
 export default Post;
